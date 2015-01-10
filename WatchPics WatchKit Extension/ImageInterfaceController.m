@@ -8,9 +8,13 @@
 
 #import "ImageInterfaceController.h"
 #import "ImageStore.h"
+#import "ImageInfo.h"
 
 @interface ImageInterfaceController()
-@property (weak, nonatomic) IBOutlet WKInterfaceImage *imageView;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *background;
+@property (weak, nonatomic) IBOutlet WKInterfaceLabel *nameLabel;
+@property (weak, nonatomic) IBOutlet WKInterfaceImage *profileImage;
+
 
 @end
 
@@ -20,8 +24,10 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     NSInteger index = [context integerValue];
-    UIImage *image = [ImageStore imageAtIndex:index];
-    [self.imageView setImage:image];
+    ImageInfo *imageInfo = [ImageStore imageInfoAtIndex:index];
+    [self.background setBackgroundImage:imageInfo.image];
+    [self.nameLabel setText:imageInfo.name];
+    [self.profileImage setImage:imageInfo.profileImage];
 }
 
 - (void)willActivate {

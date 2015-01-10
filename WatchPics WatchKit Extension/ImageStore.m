@@ -29,27 +29,19 @@ static ImageStore *instance;
     return self;
 }
 
-+ (void)addImage:(UIImage *)image {
-    [[self sharedStore] addImage:image];
++ (void)addImageInfo:(ImageInfo *)imageInfo {
+    [[self sharedStore] addImageInfo:imageInfo];
 }
 
-- (void)addImage:(UIImage *)image {
-    [_images addObject:image];
+- (void)addImageInfo:(ImageInfo *)imageInfo {
+    [_images addObject:imageInfo];
 }
 
-+ (void)addImages:(NSArray *)images {
-    [[self sharedStore] addImages:images];
++ (id)imageInfoAtIndex:(NSInteger)index {
+    return [[self sharedStore] imageInfoAtIndex:index];
 }
 
-- (void)addImages:(NSArray *)images {
-    [_images addObjectsFromArray:images];
-}
-
-+ (id)imageAtIndex:(NSInteger)index {
-    return [[self sharedStore] imageAtIndex:index];
-}
-
-- (id)imageAtIndex:(NSInteger)index {
+- (id)imageInfoAtIndex:(NSInteger)index {
     if (index >= _images.count) {
         return nil;
     }

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A14E92C1A618DD9005FA74A /* ImageInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14E92B1A618DD9005FA74A /* ImageInterfaceController.m */; };
 		9A14E92F1A619E87005FA74A /* ImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A14E92E1A619E87005FA74A /* ImageStore.m */; };
+		9A35BC711A61B73000301582 /* ImageInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A35BC701A61B73000301582 /* ImageInfo.m */; };
 		9A67BA541A61755600D4C0EA /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A67BA531A61755600D4C0EA /* InterfaceController.m */; };
 		9A67BA561A61755600D4C0EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A67BA551A61755600D4C0EA /* Images.xcassets */; };
 		9A67BA5A1A61755700D4C0EA /* WatchPics WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 9A67BA591A61755700D4C0EA /* WatchPics WatchKit App.app */; };
@@ -65,6 +66,8 @@
 		9A14E92B1A618DD9005FA74A /* ImageInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInterfaceController.m; sourceTree = "<group>"; };
 		9A14E92D1A619E87005FA74A /* ImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageStore.h; sourceTree = "<group>"; };
 		9A14E92E1A619E87005FA74A /* ImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageStore.m; sourceTree = "<group>"; };
+		9A35BC6F1A61B73000301582 /* ImageInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInfo.h; sourceTree = "<group>"; };
+		9A35BC701A61B73000301582 /* ImageInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInfo.m; sourceTree = "<group>"; };
 		9A67BA4E1A61755600D4C0EA /* WatchPics WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchPics WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A67BA511A61755600D4C0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A67BA521A61755600D4C0EA /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				9A14E92B1A618DD9005FA74A /* ImageInterfaceController.m */,
 				9A14E92D1A619E87005FA74A /* ImageStore.h */,
 				9A14E92E1A619E87005FA74A /* ImageStore.m */,
+				9A35BC6F1A61B73000301582 /* ImageInfo.h */,
+				9A35BC701A61B73000301582 /* ImageInfo.m */,
 				9A67BA551A61755600D4C0EA /* Images.xcassets */,
 				9A67BA501A61755600D4C0EA /* Supporting Files */,
 			);
@@ -424,6 +429,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A67BA541A61755600D4C0EA /* InterfaceController.m in Sources */,
+				9A35BC711A61B73000301582 /* ImageInfo.m in Sources */,
 				9A14E92C1A618DD9005FA74A /* ImageInterfaceController.m in Sources */,
 				9A14E92F1A619E87005FA74A /* ImageStore.m in Sources */,
 			);

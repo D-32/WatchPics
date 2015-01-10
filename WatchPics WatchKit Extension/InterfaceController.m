@@ -33,10 +33,12 @@
     
     [engine getSelfFeedWithCount:20 maxId:nil success:^(NSArray *media, InstagramPaginationInfo *paginationInfo) {
         for (InstagramMedia *mediaItem in media) {
-            NSURL *url = mediaItem.lowResolutionImageURL;
-            NSData *data = [NSData dataWithContentsOfURL:url];
-            UIImage *image = [[UIImage alloc] initWithData:data];
-            [ImageStore addImage:image];
+
+            ImageInfo *imageInfo = [[ImageInfo alloc] init];
+            imageInfo.image = [self downloadImage:mediaItem.lowResolutionImageURL];
+            imageInfo.name = mediaItem.user.username;
+            imageInfo.profileImage = [self downloadImage:mediaItem.user.profilePictureURL];
+            [ImageStore addImageInfo:imageInfo];
         }
         
         NSMutableArray *names = [NSMutableArray array];
@@ -46,10 +48,15 @@
             [contexts addObject:[NSNumber numberWithInt:i]];
         }
         
-        [self presentControllerWithNames:names contexts:contexts];
+        [WKInterfaceController reloadRootControllersWithNames:names contexts:contexts];
     } failure:^(NSError *error) {
         NSLog(@"");
     }];
+}
+
+- (UIImage *)downloadImage:(NSURL *)url {
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    return [[UIImage alloc] initWithData:data];
 }
 
 - (void)willActivate {

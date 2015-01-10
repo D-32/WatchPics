@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ImageInfo.h"
 
 @interface ImageStore : NSObject
 
-+ (void)addImage:(UIImage *)image;
-+ (void)addImages:(NSArray *)images;
-+ (UIImage *)imageAtIndex:(NSInteger)index;
++ (void)addImageInfo:(ImageInfo *)imageInfo;
++ (ImageInfo *)imageInfoAtIndex:(NSInteger)index;
 
 @end
