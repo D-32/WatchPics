@@ -31,9 +31,8 @@
     InstagramEngine *engine = [InstagramEngine sharedEngine];
     engine.accessToken = accessToken;
     
-    [engine getSelfFeedWithCount:20 maxId:nil success:^(NSArray *media, InstagramPaginationInfo *paginationInfo) {
+    [engine getSelfFeedWithCount:21 maxId:nil success:^(NSArray *media, InstagramPaginationInfo *paginationInfo) {
         for (InstagramMedia *mediaItem in media) {
-
             ImageInfo *imageInfo = [[ImageInfo alloc] init];
             imageInfo.image = [self downloadImage:mediaItem.lowResolutionImageURL];
             imageInfo.name = mediaItem.user.username;
@@ -43,7 +42,7 @@
         
         NSMutableArray *names = [NSMutableArray array];
         NSMutableArray *contexts = [NSMutableArray array];
-        for (int i = 0; i < 20; i++) {
+        for (int i = 0; i < media.count; i++) {
             [names addObject:@"imageController"];
             [contexts addObject:[NSNumber numberWithInt:i]];
         }
