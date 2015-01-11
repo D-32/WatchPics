@@ -22,6 +22,7 @@
 		9A75ADAC1A617520001727A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A75ADAA1A617520001727A1 /* Main.storyboard */; };
 		9A75ADAE1A617520001727A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A75ADAD1A617520001727A1 /* Images.xcassets */; };
 		9A75ADB11A617520001727A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A75ADAF1A617520001727A1 /* LaunchScreen.xib */; };
+		9A9831481A620C37003584D7 /* OverlayRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9831471A620C37003584D7 /* OverlayRowController.m */; };
 		AABA28E62D5089CD181B9B5E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C22B26762BEFB80B13F5FF4 /* libPods.a */; };
 		E9F1C35EBC191A28C25A0E5A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C22B26762BEFB80B13F5FF4 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -87,6 +88,8 @@
 		9A75ADAB1A617520001727A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A75ADAD1A617520001727A1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9A75ADB01A617520001727A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9A9831461A620C37003584D7 /* OverlayRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayRowController.h; sourceTree = "<group>"; };
+		9A9831471A620C37003584D7 /* OverlayRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayRowController.m; sourceTree = "<group>"; };
 		ECC295910BFE4A0E07E56B7D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +142,8 @@
 				9A14E92E1A619E87005FA74A /* ImageStore.m */,
 				9A35BC6F1A61B73000301582 /* ImageInfo.h */,
 				9A35BC701A61B73000301582 /* ImageInfo.m */,
+				9A9831461A620C37003584D7 /* OverlayRowController.h */,
+				9A9831471A620C37003584D7 /* OverlayRowController.m */,
 				9A67BA551A61755600D4C0EA /* Images.xcassets */,
 				9A67BA501A61755600D4C0EA /* Supporting Files */,
 			);
@@ -429,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A67BA541A61755600D4C0EA /* InterfaceController.m in Sources */,
+				9A9831481A620C37003584D7 /* OverlayRowController.m in Sources */,
 				9A35BC711A61B73000301582 /* ImageInfo.m in Sources */,
 				9A14E92C1A618DD9005FA74A /* ImageInterfaceController.m in Sources */,
 				9A14E92F1A619E87005FA74A /* ImageStore.m in Sources */,

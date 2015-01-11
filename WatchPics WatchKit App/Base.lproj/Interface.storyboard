@@ -10,8 +10,32 @@
             <objects>
                 <controller identifier="imageController" id="kXw-IN-OqW" customClass="ImageInterfaceController">
                     <items>
-                        <group width="136" height="136" alignment="left" verticalAlignment="center" id="zhH-Ki-14v">
+                        <group width="136" height="136" alignment="left" verticalAlignment="center" layout="vertical" id="zhH-Ki-14v">
                             <items>
+                                <group width="1" height="1" heightAdjustment="-30" alignment="left" id="WPH-NM-JeU">
+                                    <items>
+                                        <table alignment="left" id="EdL-Xb-uB7">
+                                            <items>
+                                                <tableRow identifier="row" id="FMn-gi-lZC" customClass="OverlayRowController">
+                                                    <group key="rootItem" width="1" height="136" alignment="left" spacing="0.0" id="slM-Zx-t0e">
+                                                        <items>
+                                                            <imageView alignment="center" verticalAlignment="center" alpha="0.0" image="heart" id="ZR0-NG-Zm9"/>
+                                                        </items>
+                                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                        <variation key="device=watch38mm" height="136"/>
+                                                        <variation key="device=watch42mm" height="156"/>
+                                                    </group>
+                                                    <connections>
+                                                        <outlet property="icon" destination="ZR0-NG-Zm9" id="7eR-xg-2gd"/>
+                                                    </connections>
+                                                </tableRow>
+                                            </items>
+                                            <color key="backgroundColor" red="0.1687970697" green="1" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        </table>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
                                 <group width="1" height="30" alignment="left" verticalAlignment="bottom" spacing="5" id="jds-7C-Neb">
                                     <items>
                                         <group width="20" height="20" alignment="left" verticalAlignment="center" radius="10" id="zuQ-JO-MlM">
@@ -35,6 +59,7 @@
                         <outlet property="background" destination="zhH-Ki-14v" id="R04-3k-RmV"/>
                         <outlet property="nameLabel" destination="7Wi-lF-lIX" id="LiB-A3-fac"/>
                         <outlet property="profileImage" destination="Gyb-BR-LRe" id="Csa-Tx-yNM"/>
+                        <outlet property="table" destination="EdL-Xb-uB7" id="I64-7h-cTa"/>
                     </connections>
                 </controller>
             </objects>
@@ -53,6 +78,7 @@
                     </items>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="205" y="240"/>
         </scene>
     </scenes>
 </document>
