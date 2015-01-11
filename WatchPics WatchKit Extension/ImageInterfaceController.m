@@ -23,6 +23,7 @@
 
 @implementation ImageInterfaceController {
     NSDate* _lastTouch;
+    BOOL _liked;
 }
 
 - (void)awakeWithContext:(id)context {
@@ -39,8 +40,21 @@
 - (void)table:(WKInterfaceTable *)table didSelectRowAtIndex:(NSInteger)rowIndex {
     OverlayRowController *rowController = [table rowControllerAtIndex:rowIndex];
     if (_lastTouch && [[NSDate date] timeIntervalSinceDate:_lastTouch] < 0.4) {
+        _liked = !_liked;
+        NSTimeInterval duration;
+        if (_liked) {
+            [rowController.icon setImageNamed:@"heart-"];
+            duration = 3;
+        } else {
+            [rowController.icon setImageNamed:@"broken-"];
+            duration = 2;
+        }
+        
         [rowController.icon setAlpha:1.0];
+        NSRange range = {0,226};
+        [rowController.icon startAnimatingWithImagesInRange:range duration:duration repeatCount:1];
     } else {
+        [rowController.icon stopAnimating];
         [rowController.icon setAlpha:0.0];
     }
     _lastTouch = [NSDate date];

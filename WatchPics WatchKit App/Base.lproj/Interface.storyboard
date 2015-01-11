@@ -17,14 +17,14 @@
                                         <table alignment="left" id="EdL-Xb-uB7">
                                             <items>
                                                 <tableRow identifier="row" id="FMn-gi-lZC" customClass="OverlayRowController">
-                                                    <group key="rootItem" width="1" height="136" alignment="left" spacing="0.0" id="slM-Zx-t0e">
+                                                    <group key="rootItem" width="1" height="106" alignment="left" spacing="0.0" id="slM-Zx-t0e">
                                                         <items>
-                                                            <imageView alignment="center" verticalAlignment="center" alpha="0.0" image="heart" id="ZR0-NG-Zm9"/>
+                                                            <imageView alignment="center" verticalAlignment="center" alpha="0.0" contentMode="center" initiallyAnimated="NO" animationDuration="3" id="ZR0-NG-Zm9"/>
                                                         </items>
                                                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                                                        <variation key="device=watch38mm" height="136"/>
-                                                        <variation key="device=watch42mm" height="156"/>
+                                                        <variation key="device=watch38mm" height="106"/>
+                                                        <variation key="device=watch42mm" height="126"/>
                                                     </group>
                                                     <connections>
                                                         <outlet property="icon" destination="ZR0-NG-Zm9" id="7eR-xg-2gd"/>
