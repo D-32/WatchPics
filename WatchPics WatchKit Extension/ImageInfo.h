@@ -13,7 +13,7 @@
 @interface ImageInfo : NSObject
 
 @property (nonatomic, retain) UIImage *image;
-@property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) UIImage *profileImage;
+@property (nonatomic, retain) InstagramUser *user;
 
 @end

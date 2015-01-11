@@ -35,8 +35,8 @@
         for (InstagramMedia *mediaItem in media) {
             ImageInfo *imageInfo = [[ImageInfo alloc] init];
             imageInfo.image = [self downloadImage:mediaItem.lowResolutionImageURL];
-            imageInfo.name = mediaItem.user.username;
             imageInfo.profileImage = [self downloadImage:mediaItem.user.profilePictureURL];
+            imageInfo.user = mediaItem.user;
             [ImageStore addImageInfo:imageInfo];
         }
         

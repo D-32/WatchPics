@@ -16,6 +16,8 @@
 		9A67BA621A61755700D4C0EA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A67BA601A61755700D4C0EA /* Interface.storyboard */; };
 		9A67BA641A61755700D4C0EA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A67BA631A61755700D4C0EA /* Images.xcassets */; };
 		9A67BA671A61755700D4C0EA /* WatchPics WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A67BA4E1A61755600D4C0EA /* WatchPics WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9A6EB8C01A628F72006E694A /* ProfileThumbnailsRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EB8BF1A628F72006E694A /* ProfileThumbnailsRowController.m */; };
+		9A6EB8C31A62913C006E694A /* NSArray+WatchPics.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EB8C21A62913C006E694A /* NSArray+WatchPics.m */; };
 		9A75ADA31A617520001727A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A75ADA21A617520001727A1 /* main.m */; };
 		9A75ADA61A617520001727A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A75ADA51A617520001727A1 /* AppDelegate.m */; };
 		9A75ADA91A617520001727A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A75ADA81A617520001727A1 /* ViewController.m */; };
@@ -23,6 +25,7 @@
 		9A75ADAE1A617520001727A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A75ADAD1A617520001727A1 /* Images.xcassets */; };
 		9A75ADB11A617520001727A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A75ADAF1A617520001727A1 /* LaunchScreen.xib */; };
 		9A9831481A620C37003584D7 /* OverlayRowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9831471A620C37003584D7 /* OverlayRowController.m */; };
+		9ADFB4241A627DA0001BBEF5 /* ProfileInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFB4231A627DA0001BBEF5 /* ProfileInterfaceController.m */; };
 		AABA28E62D5089CD181B9B5E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C22B26762BEFB80B13F5FF4 /* libPods.a */; };
 		E9F1C35EBC191A28C25A0E5A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C22B26762BEFB80B13F5FF4 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -78,6 +81,10 @@
 		9A67BA5F1A61755700D4C0EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A67BA611A61755700D4C0EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		9A67BA631A61755700D4C0EA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9A6EB8BE1A628F72006E694A /* ProfileThumbnailsRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileThumbnailsRowController.h; sourceTree = "<group>"; };
+		9A6EB8BF1A628F72006E694A /* ProfileThumbnailsRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileThumbnailsRowController.m; sourceTree = "<group>"; };
+		9A6EB8C11A62913C006E694A /* NSArray+WatchPics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+WatchPics.h"; sourceTree = "<group>"; };
+		9A6EB8C21A62913C006E694A /* NSArray+WatchPics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WatchPics.m"; sourceTree = "<group>"; };
 		9A75AD9D1A617520001727A1 /* WatchPics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchPics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A75ADA11A617520001727A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A75ADA21A617520001727A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +97,8 @@
 		9A75ADB01A617520001727A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9A9831461A620C37003584D7 /* OverlayRowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayRowController.h; sourceTree = "<group>"; };
 		9A9831471A620C37003584D7 /* OverlayRowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayRowController.m; sourceTree = "<group>"; };
+		9ADFB4221A627DA0001BBEF5 /* ProfileInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileInterfaceController.h; sourceTree = "<group>"; };
+		9ADFB4231A627DA0001BBEF5 /* ProfileInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileInterfaceController.m; sourceTree = "<group>"; };
 		ECC295910BFE4A0E07E56B7D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				9A14E9291A617A1B005FA74A /* WatchPics WatchKit Extension.entitlements */,
+				9ADFB41E1A627D80001BBEF5 /* Profile */,
 				9A67BA521A61755600D4C0EA /* InterfaceController.h */,
 				9A67BA531A61755600D4C0EA /* InterfaceController.m */,
 				9A14E92A1A618DD9005FA74A /* ImageInterfaceController.h */,
@@ -144,6 +154,8 @@
 				9A35BC701A61B73000301582 /* ImageInfo.m */,
 				9A9831461A620C37003584D7 /* OverlayRowController.h */,
 				9A9831471A620C37003584D7 /* OverlayRowController.m */,
+				9A6EB8C11A62913C006E694A /* NSArray+WatchPics.h */,
+				9A6EB8C21A62913C006E694A /* NSArray+WatchPics.m */,
 				9A67BA551A61755600D4C0EA /* Images.xcassets */,
 				9A67BA501A61755600D4C0EA /* Supporting Files */,
 			);
@@ -221,6 +233,17 @@
 				9A75ADA21A617520001727A1 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9ADFB41E1A627D80001BBEF5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				9ADFB4221A627DA0001BBEF5 /* ProfileInterfaceController.h */,
+				9ADFB4231A627DA0001BBEF5 /* ProfileInterfaceController.m */,
+				9A6EB8BE1A628F72006E694A /* ProfileThumbnailsRowController.h */,
+				9A6EB8BF1A628F72006E694A /* ProfileThumbnailsRowController.m */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,11 +456,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6EB8C31A62913C006E694A /* NSArray+WatchPics.m in Sources */,
 				9A67BA541A61755600D4C0EA /* InterfaceController.m in Sources */,
 				9A9831481A620C37003584D7 /* OverlayRowController.m in Sources */,
+				9ADFB4241A627DA0001BBEF5 /* ProfileInterfaceController.m in Sources */,
 				9A35BC711A61B73000301582 /* ImageInfo.m in Sources */,
 				9A14E92C1A618DD9005FA74A /* ImageInterfaceController.m in Sources */,
 				9A14E92F1A619E87005FA74A /* ImageStore.m in Sources */,
+				9A6EB8C01A628F72006E694A /* ProfileThumbnailsRowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

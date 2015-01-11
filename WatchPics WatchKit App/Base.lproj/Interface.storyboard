@@ -10,7 +10,7 @@
             <objects>
                 <controller identifier="imageController" id="kXw-IN-OqW" customClass="ImageInterfaceController">
                     <items>
-                        <group width="136" height="136" alignment="left" verticalAlignment="center" layout="vertical" id="zhH-Ki-14v">
+                        <group width="136" height="136" alignment="left" verticalAlignment="center" layout="vertical" radius="5" spacing="5" id="zhH-Ki-14v">
                             <items>
                                 <group width="1" height="1" heightAdjustment="-30" alignment="left" id="WPH-NM-JeU">
                                     <items>
@@ -36,20 +36,25 @@
                                     </items>
                                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                 </group>
-                                <group width="1" height="30" alignment="left" verticalAlignment="bottom" spacing="5" id="jds-7C-Neb">
-                                    <items>
-                                        <group width="20" height="20" alignment="left" verticalAlignment="center" radius="10" id="zuQ-JO-MlM">
-                                            <items>
-                                                <imageView width="1" height="1" alignment="left" id="Gyb-BR-LRe"/>
-                                            </items>
-                                        </group>
-                                        <label alignment="left" verticalAlignment="center" text="Name" textAlignment="right" id="7Wi-lF-lIX">
-                                            <fontDescription key="font" type="system" pointSize="14"/>
-                                        </label>
-                                    </items>
-                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
-                                    <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
-                                </group>
+                                <button alignment="left" id="Gif-Y6-StZ">
+                                    <group key="contentGroup" width="1" height="30" alignment="left" radius="4" spacing="5" id="dIt-ep-M0m">
+                                        <items>
+                                            <group width="20" height="20" alignment="left" verticalAlignment="center" radius="10" id="zuQ-JO-MlM">
+                                                <items>
+                                                    <imageView width="1" height="1" alignment="left" id="Gyb-BR-LRe"/>
+                                                </items>
+                                            </group>
+                                            <label alignment="left" verticalAlignment="center" text="Name" textAlignment="right" id="7Wi-lF-lIX">
+                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="deviceRGB"/>
+                                        <edgeInsets key="margins" left="5" right="0.0" top="0.0" bottom="0.0"/>
+                                    </group>
+                                    <connections>
+                                        <segue destination="CUK-zW-6Ck" kind="modal" id="krQ-lH-6tZ"/>
+                                    </connections>
+                                </button>
                             </items>
                             <variation key="device=watch38mm" height="136" width="136"/>
                             <variation key="device=watch42mm" height="156" width="156"/>
@@ -58,12 +63,212 @@
                     <connections>
                         <outlet property="background" destination="zhH-Ki-14v" id="R04-3k-RmV"/>
                         <outlet property="nameLabel" destination="7Wi-lF-lIX" id="LiB-A3-fac"/>
+                        <outlet property="profileButton" destination="Gif-Y6-StZ" id="U11-Ns-Rlu"/>
                         <outlet property="profileImage" destination="Gyb-BR-LRe" id="Csa-Tx-yNM"/>
                         <outlet property="table" destination="EdL-Xb-uB7" id="I64-7h-cTa"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="382" y="91"/>
+            <point key="canvasLocation" x="397" y="240"/>
+        </scene>
+        <!--Close-->
+        <scene sceneID="j9p-z8-Gk3">
+            <objects>
+                <controller identifier="Profile" title="Close" id="CUK-zW-6Ck" customClass="ProfileInterfaceController">
+                    <items>
+                        <group width="1" height="122" alignment="left" layout="vertical" spacing="0.0" id="sNN-IU-I7f">
+                            <items>
+                                <group width="1" height="80" alignment="left" layout="vertical" spacing="6" id="EzW-ce-g4f">
+                                    <items>
+                                        <group alignment="center" radius="25" id="KXt-Y3-E8v">
+                                            <items>
+                                                <imageView width="50" height="50" alignment="left" verticalAlignment="center" id="kM5-Za-1dc"/>
+                                            </items>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="kM5-Za-1dc"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="kM5-Za-1dc"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                        <label alignment="center" text="Name" id="I7Z-5S-CYL">
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                        </label>
+                                    </items>
+                                    <color key="backgroundColor" red="0.21921502976190477" green="0.21921502976190477" blue="0.21921502976190477" alpha="1" colorSpace="calibratedRGB"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="0.0"/>
+                                    <variation key="default">
+                                        <mask key="items">
+                                            <exclude reference="KXt-Y3-E8v"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="device=watch42mm">
+                                        <mask key="items">
+                                            <include reference="KXt-Y3-E8v"/>
+                                        </mask>
+                                    </variation>
+                                </group>
+                                <group width="1" height="42" alignment="left" radius="0.0" spacing="0.0" id="m08-Lj-sUT">
+                                    <items>
+                                        <group width="0.5" widthAdjustment="-5" height="1" alignment="left" verticalAlignment="center" layout="vertical" spacing="3" id="jlh-Kj-X9m">
+                                            <items>
+                                                <label alignment="center" text="0" id="vuW-1E-zTr">
+                                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                                </label>
+                                                <label alignment="center" text="Followers" id="qyt-mb-kSn">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="0.0"/>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="vuW-1E-zTr"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="vuW-1E-zTr"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                        <separator alignment="center" verticalAlignment="center" id="IRA-8A-Jtm"/>
+                                        <group width="0.5" widthAdjustment="-5" height="1" alignment="right" verticalAlignment="center" layout="vertical" spacing="3" id="sQQ-GG-C6P">
+                                            <items>
+                                                <label alignment="center" text="0" id="fp7-Cy-ljL">
+                                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                                </label>
+                                                <label alignment="center" text="Following" id="mIo-D6-Pbj">
+                                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                                </label>
+                                            </items>
+                                            <edgeInsets key="margins" left="0.0" right="0.0" top="5" bottom="0.0"/>
+                                            <variation key="default">
+                                                <mask key="items">
+                                                    <exclude reference="fp7-Cy-ljL"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <mask key="items">
+                                                    <include reference="fp7-Cy-ljL"/>
+                                                </mask>
+                                            </variation>
+                                        </group>
+                                    </items>
+                                    <color key="backgroundColor" red="0.11435081845238093" green="0.11435081845238093" blue="0.11435081845238093" alpha="1" colorSpace="calibratedRGB"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                            <edgeInsets key="margins" left="2" right="2" top="0.0" bottom="0.0"/>
+                        </group>
+                        <table alignment="left" id="FZr-88-A08">
+                            <items>
+                                <tableRow identifier="Thumbnails" id="Bdc-GT-YDf" customClass="ProfileThumbnailsRowController">
+                                    <group key="rootItem" width="1" alignment="left" id="ibH-9x-3IM">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" id="zQx-af-T78">
+                                                <variation key="device=watch38mm" height="30" width="30"/>
+                                                <variation key="device=watch42mm" height="34" width="34"/>
+                                            </imageView>
+                                            <group width="1" widthAdjustment="-60" alignment="left" spacing="0.0" id="YB3-eO-7oG">
+                                                <items>
+                                                    <group width="0.5" alignment="left" spacing="0.0" id="eX3-JH-nyk">
+                                                        <items>
+                                                            <imageView width="30" height="30" alignment="center" id="Bfq-tF-ctl">
+                                                                <variation key="device=watch38mm" height="30" width="30"/>
+                                                                <variation key="device=watch42mm" height="34" width="34"/>
+                                                            </imageView>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                        <variation key="default">
+                                                            <mask key="items">
+                                                                <exclude reference="Bfq-tF-ctl"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <variation key="device=watch42mm">
+                                                            <mask key="items">
+                                                                <include reference="Bfq-tF-ctl"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </group>
+                                                    <group width="0.5" alignment="left" spacing="0.0" id="wKn-On-6Pc">
+                                                        <items>
+                                                            <imageView width="30" height="30" alignment="center" id="4S1-ac-pqc">
+                                                                <variation key="device=watch38mm" height="30" width="30"/>
+                                                                <variation key="device=watch42mm" height="34" width="34"/>
+                                                            </imageView>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                        <variation key="default">
+                                                            <mask key="items">
+                                                                <exclude reference="4S1-ac-pqc"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <variation key="device=watch42mm">
+                                                            <mask key="items">
+                                                                <include reference="4S1-ac-pqc"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </group>
+                                                </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                                <variation key="default">
+                                                    <mask key="items">
+                                                        <exclude reference="eX3-JH-nyk"/>
+                                                        <exclude reference="wKn-On-6Pc"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="device=watch38mm" widthAdjustment="-60"/>
+                                                <variation key="device=watch42mm" widthAdjustment="-68">
+                                                    <mask key="items">
+                                                        <include reference="eX3-JH-nyk"/>
+                                                        <include reference="wKn-On-6Pc"/>
+                                                    </mask>
+                                                </variation>
+                                            </group>
+                                            <imageView width="30" height="30" alignment="right" id="eMK-y3-d32">
+                                                <variation key="device=watch38mm" height="30" width="30"/>
+                                                <variation key="device=watch42mm" height="34" width="34"/>
+                                            </imageView>
+                                        </items>
+                                        <color key="backgroundColor" red="0.11435081850000001" green="0.11435081850000001" blue="0.11435081850000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <edgeInsets key="margins" left="2" right="2" top="0.0" bottom="0.0"/>
+                                        <variation key="default">
+                                            <mask key="items">
+                                                <exclude reference="zQx-af-T78"/>
+                                                <exclude reference="YB3-eO-7oG"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="device=watch42mm">
+                                            <mask key="items">
+                                                <include reference="zQx-af-T78"/>
+                                                <include reference="YB3-eO-7oG"/>
+                                            </mask>
+                                        </variation>
+                                    </group>
+                                    <connections>
+                                        <outlet property="img1" destination="zQx-af-T78" id="yxg-88-8PF"/>
+                                        <outlet property="img2" destination="Bfq-tF-ctl" id="ESP-eW-vbF"/>
+                                        <outlet property="img3" destination="4S1-ac-pqc" id="LVZ-0v-vct"/>
+                                        <outlet property="img4" destination="eMK-y3-d32" id="BaR-q0-GYP"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="followersLabel" destination="vuW-1E-zTr" id="f2c-jE-jcw"/>
+                        <outlet property="followingLabel" destination="fp7-Cy-ljL" id="EAX-Iv-XoG"/>
+                        <outlet property="icon" destination="kM5-Za-1dc" id="6dG-bd-6hY"/>
+                        <outlet property="nameLabel" destination="I7Z-5S-CYL" id="IWa-9b-VJ4"/>
+                        <outlet property="table" destination="FZr-88-A08" id="fzW-EF-9qB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="600" y="240"/>
         </scene>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">

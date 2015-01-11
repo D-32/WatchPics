@@ -15,25 +15,24 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceGroup *background;
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *nameLabel;
 @property (weak, nonatomic) IBOutlet WKInterfaceImage *profileImage;
+@property (weak, nonatomic) IBOutlet WKInterfaceButton *profileButton;
 @property (weak, nonatomic) IBOutlet WKInterfaceTable *table;
-
-
 @end
 
 
 @implementation ImageInterfaceController {
     NSDate* _lastTouch;
     BOOL _liked;
+    ImageInfo *_imageInfo;
 }
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
     NSInteger index = [context integerValue];
-    ImageInfo *imageInfo = [ImageStore imageInfoAtIndex:index];
-    [self.background setBackgroundImage:imageInfo.image];
-    [self.nameLabel setText:imageInfo.name];
-    [self.profileImage setImage:imageInfo.profileImage];
-    
+    _imageInfo = [ImageStore imageInfoAtIndex:index];
+    [self.background setBackgroundImage:_imageInfo.image];
+    [self.nameLabel setText:_imageInfo.user.username];
+    [self.profileImage setImage:_imageInfo.profileImage];
     [self.table setNumberOfRows:1 withRowType:@"row"];
 }
 
@@ -60,14 +59,8 @@
     _lastTouch = [NSDate date];
 }
 
-- (void)willActivate {
-    // This method is called when watch view controller is about to be visible to user
-    [super willActivate];
-}
-
-- (void)didDeactivate {
-    // This method is called when watch view controller is no longer visible
-    [super didDeactivate];
+- (id)contextForSegueWithIdentifier:(NSString *)segueIdentifier {
+    return _imageInfo;
 }
 
 @end
