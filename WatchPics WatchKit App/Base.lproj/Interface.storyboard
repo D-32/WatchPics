@@ -275,9 +275,9 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController">
                     <items>
-                        <group width="1" alignment="left" id="f8n-nT-NWV">
+                        <group width="1" height="1" alignment="left" id="f8n-nT-NWV">
                             <items>
-                                <button width="1" alignment="left" title="Button" id="jQv-Cb-RPL"/>
+                                <label alignment="center" verticalAlignment="center" text="Please wait..." id="BQb-2f-xHI"/>
                             </items>
                         </group>
                     </items>
