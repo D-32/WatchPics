@@ -1,3 +1,7 @@
+This is a pretty old project and doesn't work anymore with newer Xcode/iOS versions.<br/>
+If you're looking for an alternative, try https://github.com/hemal08ce094/InstaFeed
+
+
 ![WatchPics](http://46.105.26.1/uploads/watchpics.jpg)
 
 Created at [WatchKit Zurich](http://watchkitzurich.ch), a hackathon focused on the Apple Watch.   
